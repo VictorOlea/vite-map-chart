@@ -6,7 +6,7 @@ var myChart = echarts.init(document.getElementById("chart-bar"));
 // Draw the chart
 myChart.setOption({
   title: {
-    text: 'Métricas por sector',
+    text: '',
     textStyle: {color: 'rgba(255, 255, 255, 0.87)'}
   },
   tooltip: {},
@@ -38,7 +38,7 @@ $.get('map_6_region.svg', function (svg) {
   echarts.registerMap('6region_svg', { svg: svg });
   option = {
     title : {
-      text : 'Registro de los últimos eventos',
+      text : 'Sensores Activos',
       textStyle: {color: 'rgba(255, 255, 255, 0.87)'}
     },
     tooltip: {},
